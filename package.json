@@ -1,0 +1,18 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "A BDD/Cucumber Framework using Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.json",
+    "generate:report": "node report.js"
+  },
+  "author": "Mark J",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "chai": "^4.3.4",
+    "cucumber-html-reporter": "^5.5.0",
+    "puppeteer": "^10.4.0"
+  }
+}
