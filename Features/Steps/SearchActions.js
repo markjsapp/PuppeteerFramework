@@ -1,4 +1,4 @@
-const { setWorldConstructor } = require('cucumber')
+const { setWorldConstructor } = require('@cucumber/cucumber')
 const { expect } = require('chai')
 const puppeteer = require('puppeteer')
 
@@ -19,7 +19,7 @@ class SearchActions {
         await this.page.type('#loginUsername', 'testAccount11223344');
         await this.page.type('#loginPassword', '123fakestreet');
         await this.page.click(submitLoginButton, {clickCount: 1 });
-        await page.waitForTimeout(3000)
+        await page.waitForSelector('#post-composer-du-media')
     }
 
     async enterSearchText(){

@@ -16,10 +16,10 @@ Given("Mark is logged in", async function() {
     return await this.login();
 })
 
-When("Mark searches for 'movies'", async function() {
-    return await this.enterSearchText();
+When("Mark searches for {string}'", async function(string) {
+    return await this.enterSearchText(string);
 })
 
-Then("/r/movies should be displayed in the results as a subreddit", async function() {
+Then("movies should be displayed in the results as a subreddit", async function() {
     return await this.validateSearchResults();
 })

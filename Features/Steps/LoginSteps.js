@@ -8,9 +8,9 @@ After(async function() {
     return await this.closeBrowser();
 })
 
-Given("Mark is on the home page", async function() {
+Given('Mark is on the home page', async function () {
     return await this.homepage();
-})
+  });
 
 When ("Mark selects the Log In button", async function() {
     return await this.selectLogin();

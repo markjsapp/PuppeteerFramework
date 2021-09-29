@@ -1,17 +1,8 @@
-const { setWorldConstructor } = require('cucumber')
+const { setWorldConstructor } = require('@cucumber/cucumber')
 const { expect } = require('chai')
 const puppeteer = require('puppeteer')
 
 class LoginActions {
-    async openBrowser() {
-        this.browser = await puppeteer.launch({headless: false });
-        this.page = await this.browser.newPage('');
-    }
-
-    async closeBrowser() {
-        this.browser = await puppeteer.close();
-    }
-
     async homepage() {
         await this.page.goto("http://reddit.com");
     }
@@ -24,8 +15,9 @@ class LoginActions {
     async enterCredentials() {
         const submitLoginButton = await this.page.$eval('//button[contains(text(),"Log In")]')
         await this.page.type('#loginUsername', 'testAccount11223344');
-        await this.page.type('#loginPassword', '123fakestreet');
+        await this.page.type('#loginPassword', '############');
         await this.page.click(submitLoginButton, {clickCount: 1 });
+        await page.waitForSelector('#post-composer-du-media')
     }
 
     async validateHomePageText() {

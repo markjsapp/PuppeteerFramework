@@ -9,4 +9,4 @@ Background:
 
 Scenario: Search for a subreddit 
     When Mark searches for 'movies'
-    Then /r/movies should be displayed in the results as a subreddit 
+    Then movies should be displayed in the results as a subreddit 
