@@ -1,12 +1,10 @@
 Feature: Search
-    In order to find various communities, users, and posts 
+    In order to find various items
     As a user 
     I want to be able to search the application 
 
-Background:
-    Given Mark is on the Reddit homepage
-    Given Mark is logged in 
-
-Scenario: Search for a subreddit 
-    When Mark searches for 'movies'
-    Then movies should be displayed in the results as a subreddit 
+Scenario: Search for an item
+    Given Mark is on the Amazon homepage
+    When Mark searches for 'Nintendo Switch'
+    Then 'Nintendo Switch' should be displayed in the results 
+    #And the item's stock photo should also be displayed 

@@ -1,10 +1,9 @@
 # PuppeteerFramework (WIP)
-By utilizing Cucumber/BDD and Google's Puppeteer I created an automation framework that currently tests Reddit's login and search functionalities.
+By utilizing Cucumber/BDD and Google's Puppeteer I created an automation framework that currently tests Amazon.com's search functionalities.
 
 ## TODO
 - Add visual regression testing via Percy
 - Add reporting via HTML Reporter
-- Finish current logic for existing scenarios 
 
 ## Libraries/Tools Used
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)

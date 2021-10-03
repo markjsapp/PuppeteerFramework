@@ -1,218 +1,67 @@
 [
   {
-    "description": "    As a Reddit user \n    I want to be able to log into the application ",
+    "description": "    In order to find various items\n    As a user \n    I want to be able to search the application ",
     "elements": [
       {
         "description": "",
-        "id": "login;login",
+        "id": "search;search-for-an-item",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Login",
+        "line": 6,
+        "name": "Search for an item",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 717000000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 353000000
+              "duration": 198000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "Mark is on the home page",
+            "line": 7,
+            "name": "Mark is on the Amazon homepage",
             "match": {
-              "location": "features\\Steps\\LoginSteps.js:11"
+              "location": "features\\Steps\\SearchSteps.js:11"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: this.homepage is not a function\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\LoginSteps.js:12:23)"
+              "status": "passed",
+              "duration": 1562000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "Mark selects the Log In button",
-            "match": {
-              "location": "features\\Steps\\LoginSteps.js:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 8,
-            "name": "enters his user credentials",
+            "name": "Mark searches for 'Nintendo Switch'",
             "match": {
-              "location": "features\\Steps\\LoginSteps.js:19"
+              "location": "features\\Steps\\SearchSteps.js:15"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 266000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "the home page should be displayed",
+            "name": "'Nintendo Switch' should be displayed in the results",
             "match": {
-              "location": "features\\Steps\\LoginSteps.js:23"
+              "location": "features\\Steps\\SearchSteps.js:19"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the his username should be displayed in the top right",
-            "match": {
-              "location": "features\\Steps\\LoginSteps.js:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 419000000
             }
           },
           {
             "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: puppeteer.close is not a function\n    at SearchActions.closeBrowser (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchActions.js:12:40)\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchSteps.js:8:23)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "TypeError: puppeteer.close is not a function\n    at SearchActions.closeBrowser (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchActions.js:12:40)\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\LoginSteps.js:8:23)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "features\\Login.feature"
-  },
-  {
-    "description": "    In order to find various communities, users, and posts \n    As a user \n    I want to be able to search the application ",
-    "elements": [
-      {
-        "description": "",
-        "id": "search;search-for-a-subreddit",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Search for a subreddit",
-        "steps": [
-          {
-            "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 363000000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 356000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "Mark is on the Reddit homepage",
-            "match": {
-              "location": "features\\Steps\\SearchSteps.js:11"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "TypeError: this.homepage is not a function\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchSteps.js:12:23)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "Mark is logged in",
-            "match": {
-              "location": "features\\Steps\\SearchSteps.js:15"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "Mark searches for 'movies'",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "movies should be displayed in the results as a subreddit",
-            "match": {
-              "location": "features\\Steps\\SearchSteps.js:23"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "TypeError: puppeteer.close is not a function\n    at SearchActions.closeBrowser (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchActions.js:12:40)\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchSteps.js:8:23)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "TypeError: puppeteer.close is not a function\n    at SearchActions.closeBrowser (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\SearchActions.js:12:40)\n    at SearchActions.<anonymous> (C:\\Users\\markj\\Desktop\\Framework\\PuppeteerFramework\\features\\Steps\\LoginSteps.js:8:23)"
+              "duration": 61000000
             }
           }
         ],

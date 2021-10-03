@@ -6,20 +6,20 @@ Before(async function() {
 
 After(async function() {
     return await this.closeBrowser();
-})
+});
 
-Given("Mark is on the Reddit homepage", async function() {
+Given("Mark is on the Amazon homepage", async function() {
     return await this.homepage();
-})
+});
 
-Given("Mark is logged in", async function() {
-    return await this.login();
-})
-
-When("Mark searches for {string}'", async function(string) {
+When('Mark searches for {string}', async function (string) {
     return await this.enterSearchText(string);
-})
+});
 
-Then("movies should be displayed in the results as a subreddit", async function() {
-    return await this.validateSearchResults();
-})
+Then('{string} should be displayed in the results', async function (string) {
+    return await this.validateSearchResults(string);
+});
+
+Then('And the item\'s stock photo should also be displayed', async function(){
+    return await this.validateSearchImage();
+});
