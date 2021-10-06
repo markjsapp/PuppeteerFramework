@@ -7,4 +7,3 @@ Scenario: Search for an item
     Given Mark is on the Amazon homepage
     When Mark searches for 'Nintendo Switch'
     Then 'Nintendo Switch' should be displayed in the results 
-    #And the item's stock photo should also be displayed 

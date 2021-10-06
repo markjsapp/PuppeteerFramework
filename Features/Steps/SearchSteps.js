@@ -19,7 +19,3 @@ When('Mark searches for {string}', async function (string) {
 Then('{string} should be displayed in the results', async function (string) {
     return await this.validateSearchResults(string);
 });
-
-Then('And the item\'s stock photo should also be displayed', async function(){
-    return await this.validateSearchImage();
-});
