@@ -11,7 +11,7 @@ This framework utilizies Cucumber/BDD and Google's Puppeteer. By using Gherkin l
 ![testrun](https://i.imgur.com/8zSujWj.png)
 
 ## Generating A Report
-![report_generation](i.https://imgur.com/O2DxW85.png)
+![report_generation](https://i.imgur.com/O2DxW85.png)
 
 ## HTML-Reporter Example
 ![report](https://i.imgur.com/kzqLd7a.png)
