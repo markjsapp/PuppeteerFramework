@@ -1,5 +1,5 @@
 # Puppeteer Framework
-This framework utilizies Cucumber/BDD and Google's Puppeteer. By using Gherkin language we're able to test Amazon.com's search functionalities. Reports are generated via HTML-Reporter and can be configured to auto generate once a test has been completed. 
+This framework utilizies Cucumber/BDD and Google's Puppeteer API. By using Gherkin language we're able to test Amazon.com's search functionalities. Reports are generated via HTML-Reporter and can be configured to auto generate once a test has been completed. 
 
 ## Automation Running 
 ![](https://thumbs.gfycat.com/ShyVagueBalloonfish-size_restricted.gif)
