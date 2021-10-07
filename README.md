@@ -5,16 +5,16 @@ This framework utilizies Cucumber/BDD and Google's Puppeteer. By using Gherkin l
 ![](https://thumbs.gfycat.com/ShyVagueBalloonfish-size_restricted.gif)
 
 ## Feature File 
-![featurefile](https://imgur.com/Ie2957w)
+![featurefile](https://i.imgur.com/Ie2957w.png)
 
 ## Running a Puppeteer Test
-![testrun](https://imgur.com/8zSujWj)
+![testrun](https://i.imgur.com/8zSujWj.png)
 
 ## Generating A Report
-![report_generation](https://imgur.com/O2DxW85)
+![report_generation](i.https://imgur.com/O2DxW85.png)
 
 ## HTML-Reporter Example
-![report](https://imgur.com/kzqLd7a)
+![report](https://i.imgur.com/kzqLd7a.png)
 
 ## TODO
 - Add visual regression testing via Percy
